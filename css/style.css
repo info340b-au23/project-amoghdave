@@ -2,3 +2,19 @@ h1.apartment {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
+.cent-img {
+    display: block;
+    margin: 0 auto; 
+    width: 500px;
+    height: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.ex-pad {
+    padding-left: 200px;
+}
