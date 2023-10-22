@@ -2,19 +2,47 @@ h1.apartment {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
 
 .cent-img {
-    display: block;
-    margin: 0 auto; 
+    float: left;
     width: 500px;
     height: 100px;
     max-width: 100%;
     height: auto;
 }
 
-.ex-pad {
-    padding-left: 200px;
+
+.button-section {
+    background-color: #ffffff;
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 20px;
+    padding-bottom: 70px;
+    margin-top: 80px; /* Adjust margin-top to move the section down */
+    margin-left: 20px; /* Adjust margin-left to move the section to the left */
+    position: relative;
+    left: -130px; 
+}
+
+button {
+    margin-bottom: 20px; 
+}
+
+.button-section a {
+    margin-top: 10px; 
+}
+
+
+.move-right {
+text-align: left;
+padding-left: 140px;
+}
+
+.icons {
+    color: gold;
+    display: inline-block;
+}
+
+.fa-heart {
+    margin-left: 80px; /* Adjust the value as needed */
 }
