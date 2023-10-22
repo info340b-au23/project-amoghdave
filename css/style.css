@@ -65,4 +65,18 @@ padding-left: 140px;
         font-size: 18px;
     }
 
+.flex-container { /* my flexbox container class */
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.flex-item {
+ padding: 20px;
+}
+
+ul#flex {
+    display: flex;
+    flex-wrap: wrap;
 }
