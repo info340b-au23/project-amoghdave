@@ -88,7 +88,7 @@ button {
   .ex-pad {
       padding-left: 200px;
   }
-
+/* index elements */
 
   #indexhtml{
     height: 100%;
@@ -117,17 +117,21 @@ button {
     flex-basis: 240px;
     padding: 1em;
     flex: 1;
-    background-color: #eee;
+    /* background-color: red; */
   }
   .sect3{
-    flex-basis: 180px;
+    flex-basis: 240px;
     flex-grow: 0;
     flex-shrink: 0;
+    padding: 1em;
+    background-color: aliceblue;
+    position: relative;
   }
   .container2{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
+    background-color: #eee;
   }
   .card-item{
     flex: 0 0 250px;

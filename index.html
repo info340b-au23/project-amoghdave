@@ -11,6 +11,9 @@
 <body id="indexbody">
     <main id="indexmain">
         <div class="indexcontainer">
+            <header>
+                
+            </header>
         <!-- <section>
             <h1>Cards</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ullam! Provident at accusantium, explicabo odio laborum ducimus earum amet repudiandae commodi quod distinctio, iste reprehenderit nihil ullam dolorum illo fugit.</p>
@@ -62,12 +65,12 @@
                    </div>
                 </div>
                 <div class="card-item">
-                    <!-- Card 5 -->
-                    <img src="./img/apt5.jpeg" alt="abstract art">
-                    <h2>Levere</h2>
-                    <h3>University District, Seattle </h3>
+                    <!-- Card 6 -->
+                    <img src="./img/apt6.jpeg" alt="abstract art">
+                    <h2>Cosmpolitan</h2>
+                    <h3>Wallingford, Seattle </h3>
                    <div class="mapsLink">
-                       <a href="https://maps.app.goo.gl/9MAcim9TQdWZ4cEE7"><p>4105 Brooklyn Ave Ne<br>Seattle, WA 98105</p></a> 
+                       <a href="https://maps.app.goo.gl/9MAcim9TQdWZ4cEE7"><p>400 Ne 45th St<br>Seattle, WA 98105</p></a> 
                    </div>
                 </div>
                 <div class="card-item">
@@ -90,22 +93,42 @@
                 </div>
             </div>
         </section>
-        Hiq quo status will be created when the stablecoin reaches 
         
 
+        <!-- Filters -->
         <section class="sect3">
-            <ul>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Delectus, aliquid vitae?</li>
-                <li>Vero, molestias debitis.</li>
-                <li>Obcaecati, vitae amet?</li>
-                <li>A, nulla dolore!</li>
-                <li>Error, nesciunt at.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo voluptates sint laudantium quaerat commodi!</p>
-            <p>Aliquam, harum cumque aspernatur consectetur tempore dicta explicabo facere, adipisci sunt quas perferendis repudiandae sequi!</p>
-            <p>Dolore aut error distinctio! Nemo impedit ipsum sunt neque vel enim unde incidunt nam consequuntur!</p>
+            <h2>Filter Options</h2>
+
+            <!-- Price Range -->
+            <div class="filter-item">
+                <label for="priceRange">Price Range ($):</label>
+                <input type="range" id="priceRange" name="priceRange" min="500" max="5000" step="100">
+                <span id="priceRangeValue">$500 - $5000</span>
+            </div>
+
+            <!-- Number of Bedrooms -->
+            <div class="filter-item">
+                <label for="numBedrooms">Number of Bedrooms:</label>
+                <select id="numBedrooms" name="numBedrooms">
+                    <option value="studio">Studio</option>
+                    <option value="1">1 Bedroom</option>
+                    <option value="2">2 Bedrooms</option>
+                    <option value="3">3+ Bedrooms</option>
+                </select>
+            </div>
+
+            <!-- Availability Date -->
+            <div class="filter-item">
+                <label for="availabilityDate">Available From:</label>
+                <input type="date" id="availabilityDate" name="availabilityDate">
+            </div>
+
+            <!-- Filter Button -->
+            <div class="filter-item">
+                <button onclick="applyFilter()">Apply Filter</button>
+            </div>
         </section>
+
     </div>
 
     </main>
