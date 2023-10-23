@@ -9,6 +9,11 @@ h1.apartment {
 h1 {
     text-align: center;
 }
+
+.heading {
+    text-align: left;
+}
+
 .button-section {
   background-color: #ffffff;
   text-align: center;
@@ -85,10 +90,6 @@ button {
     max-width: 100%;
     height: auto;
   }
-  .ex-pad {
-      padding-left: 200px;
-  }
-
 
   #indexhtml{
     height: 100%;
@@ -160,8 +161,3 @@ button {
   h2,h3{
     text-align: center;
   }
-
-
-
-
-  
