@@ -90,6 +90,23 @@ button {
     background-color: aliceblue;
     position: relative;
   }
+
+  .filter-item {
+    margin-bottom: 20px;
+  }
+
+  .index-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0078d4;
+    color: white;
+    cursor: pointer;
+  } */
+
+  button:hover {
+    background-color: #106ebc;
+  }
+
   .container2{
     display: flex;
     flex-wrap: wrap; 
@@ -124,9 +141,64 @@ button {
   h2,h3{
     text-align: center;
   }
+/* Login page */
+ .login-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.login-container {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #005a9e;
+}
+
+
+.regrister-link {
+  color: #0078d4;
+  text-decoration: none;
+}
 
   @media screen and (max-width: 767px) {
-    /* Your CSS styles for small screens go here */
+    Your CSS styles for small screens go here
     .button-section {
         padding: 20px;
         display: none;
@@ -147,14 +219,14 @@ button {
 }
 
 
-/* Media query for big screens (e.g., desktops) */
+Media query for big screens (e.g., desktops)
 @media screen and (min-width: 768px) {
 
     body {
         font-size: 18px;
     }
 
-.flex-container { /* my flexbox container class */
+  .flex-container { my flexbox container class
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
