@@ -1,0 +1,219 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1.apartment {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.heading {
+    text-align: left;
+}
+
+.button-section {
+  background-color: #ffffff;
+  text-align: center;
+  border: 2px solid #000000;
+  padding: 20px;
+  padding-bottom: 55px;
+  margin-top: 40px; /* Adjust margin-top to move the section down */
+  margin-left: 20px; /* Adjust margin-left to move the section to the left */
+  left: -40px; 
+}
+button {
+  margin-bottom: 20px; 
+}
+.button-section a {
+  margin-top: 10px; 
+}
+.move-right {
+  text-align: left;
+  padding-left: 140px;
+  }
+  
+  .icons i {
+      color: rgb(226, 208, 110);
+      display: inline-block;
+  }
+  
+  .fa-heart {
+      margin-left: 80px;
+  }
+  
+  
+  
+  .cent-img {
+    float: left;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #indexhtml{
+    height: 100%;
+  }
+#indexmain{
+    flex: 1;
+    height: 100%;
+  }
+  p{
+    padding: 0.5rem 1rem;
+  }
+  
+  #indexbody {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 0;
+    height: inherit;
+  }
+  .indexcontainer{ 
+    display: flex;
+    padding: 1em;
+    height: 100%;
+  }
+  .sect2{
+    flex-basis: 240px;
+    padding: 1em;
+    flex: 1;
+    /* background-color: red; */
+  }
+  .sect3{
+    flex-basis: 240px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1em;
+    background-color: aliceblue;
+    position: relative;
+  }
+
+  .filter-item {
+    margin-bottom: 20px;
+  }
+
+  .index-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0078d4;
+    color: white;
+    cursor: pointer;
+  } */
+
+  button:hover {
+    background-color: #106ebc;
+  }
+
+  .container2{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background-color: #eee;
+  }
+  .card-item{
+    flex: 0 0 250px;
+    background-color: white;
+    margin: 0.5rem;
+    box-shadow: 01px 3px rgba(0,0,0,0.16) ,01px 3px rgba(0,0,0,0.23);
+    border-radius: 2px;
+  }
+  .card-item img{
+    max-width: 250px;
+  }
+  .mapsLink p{
+    text-align: center;
+    width: 100%;
+  }
+  .mapsLink a{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2px;
+  }
+  
+  .card-item p{
+    margin:0;
+    text-align: center;
+  }
+  h2,h3{
+    text-align: center;
+  }
+/* Login page */
+ .login-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.login-container {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #005a9e;
+}
+
+
+.regrister-link {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+  @media screen and (max-width: 767px) {
+    Your CSS styles for small screens go here
+    .button-section {
+        padding: 20px;
+        display: none;
+    }
+    .small-screen {
+        padding-left: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+  .sect3{
+    display: none;
+  }
+}
