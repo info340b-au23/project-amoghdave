@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './style.css';
 import Header from './pages/Header';
 import Login from './pages/login';
-import ApartmentReview from './pages/ApartmentReviews';
+import Review from './pages/review';
 import PropertyList from './pages/propertylist';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/login" component={Login} />
-            <Route path="/ApartmentReviews" component={ApartmentReview} />
+            <Route path="/review" component={Review} />
             <Route path="/property-list" component={PropertyList} />
             {/* Add additional routes as needed */}
             <Route path="/">
@@ -64,7 +64,7 @@ function App() {
                       {/* Property Cards */}
                       {/* Card 1 */}
                       <div className="card-item">
-                        <img src="./img/apt1.jpeg" alt="apartmentImage1" />
+                        <img src={require("./img/apt1.jpeg")} alt="apartmentImage1" />
                         <h2>University Manor</h2>
                         <h3>University District, Seattle </h3>
                         <p>1305 NE 43rd St<br />Seattle, WA 98105 </p>
@@ -72,7 +72,7 @@ function App() {
 
                       {/* Card 2 */}
                       <div className="card-item">
-                        <img src="./img/apt2.jpeg" alt="apartment Image 2" />
+                        <img src={require("./img/apt2.jpeg")} alt="apartment Image 2" />
                         <h2>Verve Flats</h2>
                         <h3>University District, Seattle </h3>
                         <div className="mapsLink">
@@ -84,7 +84,7 @@ function App() {
 
                       {/* Card 3 */}
                       <div className="card-item">
-                        <img src="./img/apt3.jpeg" alt="apartment Image 3" />
+                        <img src={require("./img/apt3.jpeg")} alt="apartment Image 3" />
                         <h2>Campus View</h2>
                         <h3>University District, Seattle </h3>
                         <div className="mapsLink">
@@ -96,7 +96,7 @@ function App() {
 
                       {/* Card 4 */}
                       <div className="card-item">
-                        <img src="./img/apt4.jpeg" alt="apartment Image 4" />
+                        <img src={require("./img/apt4.jpeg")} alt="apartment Image 4" />
                         <h2>Sundodger</h2>
                         <h3>University District, Seattle </h3>
                         <div className="mapsLink">
@@ -108,7 +108,7 @@ function App() {
 
                       {/* Card 5 */}
                       <div className="card-item">
-                        <img src="./img/apt5.jpeg" alt="apartment Image 5" />
+                        <img src={require("./img/apt5.jpeg")} alt="apartment Image 5" />
                         <h2>Levere</h2>
                         <h3>University District, Seattle </h3>
                         <div className="mapsLink">
@@ -120,7 +120,7 @@ function App() {
 
                       {/* Card 6 */}
                       <div className="card-item">
-                        <img src="./img/apt7.jpeg" alt="apartment Image 6" />
+                        <img src={require("./img/apt7.jpeg")} alt="apartment Image 6" />
                         <h2>Cosmpolitan</h2>
                         <h3>Wallingford, Seattle </h3>
                         <div className="mapsLink">
@@ -132,7 +132,7 @@ function App() {
 
                       {/* Card 7 */}
                       <div className="card-item">
-                        <img src="./img/apt5.jpeg" alt="apartment Image 7" />
+                        <img src={require("./img/apt4.webp")} alt="apartment Image 7" />
                         <h2>Robins Nest</h2>
                         <h3>Portage Bay, Seattle </h3>
                         <div className="mapsLink">
@@ -144,7 +144,7 @@ function App() {
 
                       {/* Card 8 */}
                       <div className="card-item">
-                        <img src="./img/apt5.jpeg" alt="apartment Image 8" />
+                        <img src={require("./img/apt3.jpeg")} alt="apartment Image 8" />
                         <h2>Levere</h2>
                         <h3>University District, Seattle </h3>
                         <div className="mapsLink">
