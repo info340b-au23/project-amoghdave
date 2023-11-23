@@ -159,7 +159,47 @@ function App() {
 
                   {/* Section 3: Filters */}
                   <section className="sect3">
-                    {/* ... Your existing filter code ... */}
+                    {/* Price Range Filter */}
+                    <div>
+                      <label htmlFor="priceRange">Price Range: </label>
+                      <input 
+                        type="range" 
+                        id="priceRange" 
+                        value={filters.priceRange} 
+                        onChange={handlePriceRangeChange} 
+                      />
+                      <span>{filters.priceRange}</span>
+                    </div>
+
+                    {/* Number of Bedrooms Filter */}
+                    <div>
+                      <label htmlFor="numBedrooms">Number of Bedrooms: </label>
+                      <select 
+                        id="numBedrooms" 
+                        value={filters.numBedrooms} 
+                        onChange={handleNumBedroomsChange}
+                      >
+                        <option value="studio">Studio</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                      </select>
+                    </div>
+
+                    {/* Availability Date Filter */}
+                    <div>
+                      <label htmlFor="availabilityDate">Availability Date: </label>
+                      <input 
+                        type="date" 
+                        id="availabilityDate" 
+                        value={filters.availabilityDate} 
+                        onChange={handleAvailabilityDateChange} 
+                      />
+                    </div>
+
+                    {/* Apply Filters Button */}
+                    <button onClick={applyFilters}>Apply Filters</button>
                   </section>
 
                 </div>
