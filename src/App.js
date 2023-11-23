@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './style.css';
 import Header from './pages/Header';
 import Login from './pages/login';
-import Review from './pages/review';
+import ApartmentReview from './pages/ApartmentReviews';
 import PropertyList from './pages/propertylist';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/login" component={Login} />
-            <Route path="/review" component={Review} />
+            <Route path="/ApartmentReviews" component={ApartmentReview} />
             <Route path="/property-list" component={PropertyList} />
             {/* Add additional routes as needed */}
             <Route path="/">
