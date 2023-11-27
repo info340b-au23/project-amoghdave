@@ -20,8 +20,8 @@ h1 {
   border: 2px solid #000000;
   padding: 20px;
   padding-bottom: 55px;
-  margin-top: 40px; /* Adjust margin-top to move the section down */
-  margin-left: 20px; /* Adjust margin-left to move the section to the left */
+  margin-top: 40px;
+  margin-left: 20px;
   left: -40px; 
 }
 button {
@@ -80,7 +80,6 @@ button {
     flex-basis: 240px;
     padding: 1em;
     flex: 1;
-    /* background-color: red; */
   }
   .sect3{
     flex-basis: 240px;
@@ -101,7 +100,7 @@ button {
     background-color: #0078d4;
     color: white;
     cursor: pointer;
-  } */
+  } 
 
   button:hover {
     background-color: #106ebc;
@@ -141,7 +140,7 @@ button {
   h2,h3{
     text-align: center;
   }
-/* Login page */
+
  .login-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
