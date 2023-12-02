@@ -5,6 +5,8 @@ import Header from './pages/Header';
 import Login from './pages/login';
 import ApartmentReview from './pages/ApartmentReviews';
 import PropertyList from './pages/propertylist';
+import FilterComponent from './pages/FilterComponent'; 
+
 import apartmentData from './data.json';
 
 function App() {
@@ -76,22 +78,24 @@ function App() {
                   </section>
 
                   <section className="sect3">
+                    {/* Price Range Filter */}
                     <div>
                       <label htmlFor="priceRange">Price Range: </label>
-                      <input
-                        type="range"
-                        id="priceRange"
-                        value={filters.priceRange}
-                        onChange={handlePriceRangeChange}
+                      <input 
+                        type="range" 
+                        id="priceRange" 
+                        value={filters.priceRange} 
+                        onChange={handlePriceRangeChange} 
                       />
                       <span>{filters.priceRange}</span>
                     </div>
 
+                    {/* Number of Bedrooms Filter */}
                     <div>
                       <label htmlFor="numBedrooms">Number of Bedrooms: </label>
-                      <select
-                        id="numBedrooms"
-                        value={filters.numBedrooms}
+                      <select 
+                        id="numBedrooms" 
+                        value={filters.numBedrooms} 
                         onChange={handleNumBedroomsChange}
                       >
                         <option value="studio">Studio</option>
@@ -102,16 +106,18 @@ function App() {
                       </select>
                     </div>
 
+                    {/* Availability Date Filter */}
                     <div>
                       <label htmlFor="availabilityDate">Availability Date: </label>
-                      <input
-                        type="date"
-                        id="availabilityDate"
-                        value={filters.availabilityDate}
-                        onChange={handleAvailabilityDateChange}
+                      <input 
+                        type="date" 
+                        id="availabilityDate" 
+                        value={filters.availabilityDate} 
+                        onChange={handleAvailabilityDateChange} 
                       />
                     </div>
 
+                    {/* Apply Filters Button */}
                     <button onClick={applyFilters}>Apply Filters</button>
                   </section>
                 </div>

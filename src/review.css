@@ -80,7 +80,6 @@ button {
     flex-basis: 240px;
     padding: 1em;
     flex: 1;
-    /* background-color: red; */
   }
   .sect3{
     flex-basis: 240px;
@@ -101,7 +100,7 @@ button {
     background-color: #0078d4;
     color: white;
     cursor: pointer;
-  } */
+  } 
 
   button:hover {
     background-color: #07a4ff; 
@@ -148,7 +147,8 @@ button {
   h2,h3{
     text-align: center;
   }
-/* Login page */
+
+  
  .login-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
