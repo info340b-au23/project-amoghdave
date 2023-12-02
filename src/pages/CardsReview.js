@@ -2,69 +2,44 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardReview = (props) => {
+  const { name, beds, baths, sqft, rent, amenities, reviews } = props.apartment;
+
   return (
     <div className="container ex-pad">
-    <table className="table">
-      <thead>
-        <tr>
-          <th scope="col">Monthly Rent</th>
-          <th scope="col">Bedrooms</th>
-          <th scope="col">Bathrooms</th>
-          <th scope="col">Square Feet</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">2,000-3,000</th>
-          <td>Studio-5 bd</td>
-          <td>1-5 ba</td>
-          <td>500-1400 sq ft</td>
-        </tr>
-      </tbody>
-    </table>
+      <table className="table">
+        <tbody>
+          <tr>
+            <th scope="row">Bedrooms</th>
+            <td>{beds}</td>
+            <th scope="row">Bathrooms</th>
+            <td>{baths}</td>
+            <th scope="row">Square Feet</th>
+            <td>{sqft}</td>
+          </tr>
+          <tr>
+            <th scope="row">Monthly Rent</th>
+            <td>{rent}</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <section className="small-card p-2">
-      <div className="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-        <div className="col">
-          <div className="card" style={{ width: '18rem' }}>
-            <div className="card-body">
-              <h5 className="card-title">Review title</h5>
-              <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <section className="small-card p-2">
+        <h3 className="mb-3">Reviews</h3>
+        <div className="row row-cols-1 row-cols-md-2 g-4">
+          {reviews.map((review, index) => (
+            <div className="col" key={index}>
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">{review.title}</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">{review.date}</h6>
+                  <p className="card-text">{review.content}</p>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-        <div className="col">
-          <div className="card" style={{ width: '18rem' }}>
-            <div className="card-body">
-              <h5 className="card-title">Review title</h5>
-              <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card" style={{ width: '18rem' }}>
-            <div className="card-body">
-              <h5 className="card-title">Review title</h5>
-              <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card" style={{ width: '18rem' }}>
-            <div className="card-body">
-              <h5 className="card-title">Review title</h5>
-              <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-  </div>
+      </section>
+    </div>
   );
 };
 

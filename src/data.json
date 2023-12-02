@@ -1,0 +1,321 @@
+{
+    "apartments": [
+      {
+        "name": "Verve Flats",
+        "address": {
+          "street": "4302 7th Ave Ne",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98105"
+        },
+        "description": "Experience the epitome of modern living at Verve Flats, located in the heart of the University District, Seattle. These stylish apartments offer 2 bedrooms, 2 bathrooms, and a generous 1200 sq ft of living space.",
+        "beds": 2,
+        "baths": 2,
+        "sqft": 1200,
+        "rent": 2000,
+        "image": "/img/apt1.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "mapsLink": "https://maps.app.goo.gl/CV7By2Rg9RxmVH2s6",
+        "reviews": [
+            {
+              "title": "Modern Living Bliss",
+              "date": "January 15, 2023",
+              "content": "Living at Verve Flats has been an absolute delight. The modern design and amenities create a blissful living experience. The location is convenient, and the spacious interiors make it a perfect home."
+            },
+            {
+              "title": "Fantastic Place!",
+              "date": "February 2, 2023",
+              "content": "Verve Flats is a fantastic place to live! The attention to detail in design, along with the convenient location, makes it a top choice. The management is responsive, and the amenities are great."
+            },
+            {
+              "title": "Highly Recommended",
+              "date": "March 10, 2023",
+              "content": "I highly recommend Verve Flats to anyone looking for a stylish and comfortable living space. The fully furnished apartments, wood-style flooring, and full-size beds add to the overall appeal. Great place!"
+            }
+          ]
+      },
+      {
+        "name": "Pineview Residences",
+        "address": {
+          "street": "123 Pine St",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98101"
+        },
+        "description": "Discover the luxury of spacious living with panoramic views at Pineview Residences. These elegant apartments feature 3 bedrooms, 2.5 baths, and a sprawling 1800 sq ft of space, providing a perfect urban retreat.",
+        "beds": 3,
+        "baths": 3.5,
+        "sqft": 1800,
+        "image": "/img/apt3.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/abc123xyz456",
+        "reviews": [
+          {
+            "title": "Luxurious Urban Retreat",
+            "date": "July 8, 2023",
+            "content": "Pineview Residences provide a luxurious urban retreat. The spacious layout, combined with panoramic views, creates an exceptional living experience. The fully furnished apartments are well-appointed."
+          },
+          {
+            "title": "Elegance and Comfort",
+            "date": "August 15, 2023",
+            "content": "Elegance and comfort define Pineview Residences. The 3-bedroom layout and stylish amenities make it a standout choice for urban living. The wood-style flooring adds a touch of sophistication."
+          },
+          {
+            "title": "Panoramic Views",
+            "date": "September 25, 2023",
+            "content": "Living at Pineview Residences means waking up to panoramic views every day. The attention to detail in design, along with the full-size beds and modern furnishings, creates a comfortable and stylish home."
+          }
+        ]
+        
+      },
+      {
+        "name": "Lakefront Lofts",
+        "address": {
+          "street": "789 Lakeview Dr",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98115"
+        },
+        "description": "Indulge in the serenity of Lakefront Lofts, where luxury meets nature. These one-bedroom lofts offer a tranquil escape with 1 bath and 900 sq ft of space, all overlooking the picturesque lake.",
+        "beds": 1,
+        "baths": 1.5,
+        "sqft": 900,
+        "image": "/img/apt4.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/def456ghi789",
+        "reviews": [
+            {
+              "title": "Lakefront Luxury",
+              "date": "April 5, 2023",
+              "content": "Living at Lakefront Lofts is pure luxury. The view of the lake is breathtaking, and the one-bedroom lofts provide a perfect escape. The amenities, including wood-style flooring, add to the overall charm."
+            },
+            {
+              "title": "Nature's Retreat",
+              "date": "May 12, 2023",
+              "content": "Lakefront Lofts offer a retreat into nature. The serene environment and picturesque lake view make it a unique living experience. Highly recommended for those seeking peace and luxury."
+            },
+            {
+              "title": "Tranquil Living",
+              "date": "June 20, 2023",
+              "content": "I've found tranquility at Lakefront Lofts. The one-bedroom layout, coupled with the well-designed amenities, creates a peaceful living space. The location is perfect for those who appreciate nature."
+            }
+          ]
+      },
+      {
+        "name": "Majestic Heights Apartments",
+        "address": {
+          "street": "456 Summit Ave",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98109"
+        },
+        "description": "Discover the heights of sophistication at Majestic Heights Apartments. With 2 bedrooms, 2 baths, and 1300 sq ft of contemporary design, these apartments redefine urban living in Seattle.",
+        "beds": 2,
+        "baths": 2.5,
+        "sqft": 1300,
+        "image": "/img/apt4.webp",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/ghi789jkl012",
+        "reviews": [
+            {
+              "title": "Sophisticated Living",
+              "date": "June 12, 2023",
+              "content": "Majestic Heights Apartments offer a sophisticated living experience. The contemporary design, combined with the fully furnished interior, creates an environment of modern elegance."
+            },
+            {
+              "title": "Contemporary Comfort",
+              "date": "July 20, 2023",
+              "content": "Experience contemporary comfort at Majestic Heights. The 2-bedroom layout provides ample space, and the in-unit washer and dryer add convenience to your urban lifestyle."
+            },
+            {
+              "title": "Urban Retreat",
+              "date": "August 30, 2023",
+              "content": "Majestic Heights Apartments redefine urban living as a true retreat. The wood-style flooring and keyed bedroom entry contribute to the contemporary charm of these spacious units."
+            }
+          ]
+      },
+      {
+        "name": "Skyline Towers",
+        "address": {
+          "street": "789 Skyview Blvd",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98120"
+        },
+        "description": "Elevate your lifestyle at Skyline Towers, offering stunning city views. These modern apartments feature 1 bedroom, 1 bath, and 800 sq ft of contemporary living space.",
+        "beds": 1,
+        "baths": 1,
+        "sqft": 800,
+        "image": "/img/apt5.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/mno345pqr678",
+        "reviews": [
+            {
+              "title": "Cityscape Haven",
+              "date": "September 5, 2023",
+              "content": "Skyline Towers is a haven within the cityscape. The stunning city views from these modern apartments create a picturesque setting for urban living."
+            },
+            {
+              "title": "Contemporary Elegance",
+              "date": "October 15, 2023",
+              "content": "Elegance meets contemporary living at Skyline Towers. The fully furnished interior and wood-style flooring add a touch of sophistication to these 1-bedroom units."
+            },
+            {
+              "title": "Urban Retreat",
+              "date": "November 25, 2023",
+              "content": "Escape to an urban retreat at Skyline Towers. The 1-bedroom layout provides a cozy yet spacious environment, and the amenities offer a comfortable lifestyle."
+            }
+          ]
+      },
+      {
+        "name": "Harborfront Haven",
+        "address": {
+          "street": "456 Harbor Dr",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98125"
+        },
+        "description": "Escape to Harborfront Haven, where waterfront living meets urban convenience. These stylish 2-bedroom apartments boast 2.5 baths and 1500 sq ft of coastal charm.",
+        "beds": 2,
+        "baths": 2.5,
+        "sqft": 1500,
+        "image": "/img/apt7.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/pqr678stu901",
+        "reviews": [
+            {
+              "title": "Coastal Serenity",
+              "date": "September 10, 2023",
+              "content": "Harborfront Haven offers coastal serenity with its waterfront location. The 2-bedroom apartments provide a perfect blend of urban convenience and peaceful retreat."
+            },
+            {
+              "title": "Charming Waterfront Living",
+              "date": "October 20, 2023",
+              "content": "Experience the charm of waterfront living at Harborfront Haven. These stylish apartments boast 2.5 baths, making them the perfect coastal escape in the heart of the city."
+            },
+            {
+              "title": "Seaside Elegance",
+              "date": "November 30, 2023",
+              "content": "Harborfront Haven redefines urban living with seaside elegance. The 2-bedroom layout and coastal charm create a unique living experience for residents."
+            }
+          ]
+      },
+      {
+        "name": "Cascade View Residences",
+        "address": {
+          "street": "101 Cascade Ave",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98130"
+        },
+        "description": "Live in luxury at Cascade View Residences, offering breathtaking mountain vistas. These 3-bedroom apartments feature 3 baths and 2000 sq ft of opulent living space.",
+        "beds": 3,
+        "baths": 3,
+        "sqft": 2000,
+        "image": "/img/apt1.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/tuv012wxy345",
+        "reviews": [
+            {
+              "title": "Mountain Majesty",
+              "date": "December 5, 2023",
+              "content": "Cascade View Residences offer mountain majesty with breathtaking vistas. The 3-bedroom layout and opulent design create a luxurious living experience for residents."
+            },
+            {
+              "title": "Luxury Living in Nature",
+              "date": "January 15, 2024",
+              "content": "Experience luxury living in the heart of nature at Cascade View Residences. The 3-bedroom apartments, each with 3 baths, provide a perfect blend of comfort and natural beauty."
+            },
+            {
+              "title": "Panoramic Mountain Views",
+              "date": "February 25, 2024",
+              "content": "Wake up to panoramic mountain views at Cascade View Residences. These opulent apartments redefine urban living with their spacious 3-bedroom layout and stylish amenities."
+            }
+          ]
+      },
+      {
+        "name": "Downtown Oasis",
+        "address": {
+          "street": "567 Main St",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98135"
+        },
+        "description": "Experience urban sophistication at Downtown Oasis, situated in the heart of the city. These 1-bedroom apartments offer 1.5 baths and 1000 sq ft of stylish, downtown living.",
+        "beds": 1,
+        "baths": 1.5,
+        "sqft": 1000,
+        "image": "/img/apt1.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/uvw234xyz567",
+        "reviews": [
+            {
+              "title": "Urban Elegance",
+              "date": "March 10, 2024",
+              "content": "Downtown Oasis offers urban elegance in the heart of the city. The 1-bedroom apartments with 1.5 baths provide a stylish and comfortable living space for residents."
+            },
+            {
+              "title": "Stylish Downtown Living",
+              "date": "April 20, 2024",
+              "content": "Experience stylish downtown living at Downtown Oasis. The 1-bedroom apartments feature modern amenities, wood-style flooring, and a convenient location for city enthusiasts."
+            },
+            {
+              "title": "Cityscape Views",
+              "date": "May 30, 2024",
+              "content": "Wake up to breathtaking cityscape views at Downtown Oasis. These 1-bedroom apartments redefine urban living with their stylish design and convenient downtown location."
+            }
+          ]
+      },
+      {
+        "name": "Greenview Estates",
+        "address": {
+          "street": "789 Greenway Ln",
+          "city": "Seattle",
+          "state": "WA",
+          "zip": "98140"
+        },
+        "description": "Embrace nature at Greenview Estates, surrounded by lush greenery. These 2-bedroom apartments offer 2 baths and 1800 sq ft of peaceful, eco-friendly living.",
+        "beds": 2,
+        "baths": 2,
+        "sqft": 1800,
+        "image": "/img/apt1.jpeg",
+        "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
+        "tel": "(206 729-7737)",
+        "rent": 2000,
+        "mapsLink": "https://maps.app.goo.gl/xyz567abc890",
+        "reviews": [
+            {
+              "title": "Nature's Haven",
+              "date": "June 15, 2024",
+              "content": "Greenview Estates truly lives up to its name as a nature's haven. Surrounded by lush greenery, these 2-bedroom apartments offer a peaceful and eco-friendly living experience."
+            },
+            {
+              "title": "Serene Environment",
+              "date": "July 25, 2024",
+              "content": "Escape to a serene environment at Greenview Estates. The 2-bedroom apartments with 2 baths provide residents with a tranquil and comfortable living space, harmonizing with nature."
+            },
+            {
+              "title": "Eco-Friendly Living",
+              "date": "August 30, 2024",
+              "content": "Experience eco-friendly living at Greenview Estates. These 2-bedroom apartments are designed to provide a sustainable and peaceful lifestyle, blending modern comfort with nature's beauty."
+            }
+          ]
+      }
+    ]
+  }
+  
