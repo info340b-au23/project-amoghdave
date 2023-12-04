@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderReview from './HeaderReview';
@@ -8,17 +8,27 @@ import PostReview from './PostReview';
 import apartmentData from '../data.json';
 
 const ApartmentReview = () => {
-  // Get the id parameter from the URL
   const { id } = useParams();
+  const initialApartments = apartmentData.apartments;
+  const [apartments, setApartments] = useState(initialApartments);
 
-  // Use the id to get the specific apartment data
-  const apartment = apartmentData.apartments[id];
+  const apartment = apartments[id];
+
+  // Define addReview function
+  const addReview = (newReview) => {
+    const updatedApartments = [...apartments];
+    updatedApartments[id].reviews.push(newReview);
+
+    // Set the state to trigger a re-render with the updated data
+    setApartments(updatedApartments);
+  };
 
   return (
     <div className="container">
       <TitleReview apartment={apartment} />
       <CardReview apartment={apartment} />
-      <PostReview apartment={apartment} />
+      {/* Pass addReview as a prop to PostReview */}
+      <PostReview addReview={addReview} />
       <footer>
         <p>&copy; 2023 Husky Homes</p>
         <p>Created by Suraj Gangaram, Amogh Dave, Coby Williams-Gurian, Jerry Tang</p>
@@ -28,3 +38,4 @@ const ApartmentReview = () => {
 };
 
 export default ApartmentReview;
+
