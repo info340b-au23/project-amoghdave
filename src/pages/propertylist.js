@@ -3,10 +3,9 @@ import React from 'react';
 
 const PropertyList = () => {
   return (
+    <>
     <div>
-
-
-      <main id="indexmain">
+      <main className="indexmain">
         <div className="indexcontainer">
           {/* Section 2: Property Cards */}
           <section className="sect2">
@@ -22,7 +21,7 @@ const PropertyList = () => {
 
               {/* Card 2 */}
               <div className="card-item">
-                <img src="./img/apt2.jpeg" alt="apartment Image 2" />
+                <img src="./img/apt2.jpeg" alt="apartment 2" />
                 <h2>Verve Flats</h2>
                 <h3>University District, Seattle </h3>
                 <div className="mapsLink">
@@ -52,7 +51,6 @@ const PropertyList = () => {
             <div className="filter-item">
               <label htmlFor="numBedrooms">Number of Bedrooms:</label>
               <select id="numBedrooms" name="numBedrooms">
-                <option value="studio">Studio</option>
                 <option value="1">1 Bedroom</option>
                 <option value="2">2 Bedrooms</option>
                 <option value="3">3+ Bedrooms</option>
@@ -78,6 +76,7 @@ const PropertyList = () => {
         <p>&copy; 2023 Husky Homes</p>
       </footer>
     </div>
+    </>
   );
 };
 

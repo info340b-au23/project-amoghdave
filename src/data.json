@@ -13,6 +13,7 @@
         "baths": 2,
         "sqft": 1200,
         "rent": 2000,
+        "availabilityDate": "12/03/2025",
         "image": "/img/apt1.jpeg",
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
@@ -51,6 +52,7 @@
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
         "rent": 2000,
+        "availabilityDate": "16/06/2025",
         "mapsLink": "https://maps.app.goo.gl/abc123xyz456",
         "reviews": [
           {
@@ -87,6 +89,7 @@
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
         "rent": 2000,
+        "availabilityDate": "17/01/2028",
         "mapsLink": "https://maps.app.goo.gl/def456ghi789",
         "reviews": [
             {
@@ -122,6 +125,7 @@
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
         "rent": 2000,
+        "availabilityDate": "17/07/2028",
         "mapsLink": "https://maps.app.goo.gl/ghi789jkl012",
         "reviews": [
             {
@@ -156,7 +160,8 @@
         "image": "/img/apt5.jpeg",
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
-        "rent": 2000,
+        "rent": 3000,
+        "availabilityDate": "19/07/2024",
         "mapsLink": "https://maps.app.goo.gl/mno345pqr678",
         "reviews": [
             {
@@ -192,6 +197,7 @@
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
         "rent": 2000,
+        "availabilityDate": "11/09/2029",
         "mapsLink": "https://maps.app.goo.gl/pqr678stu901",
         "reviews": [
             {
@@ -226,7 +232,8 @@
         "image": "/img/apt8.jpeg",
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
-        "rent": 2000,
+        "rent": 5000,
+        "availabilityDate": "12/07/2026",
         "mapsLink": "https://maps.app.goo.gl/tuv012wxy345",
         "reviews": [
             {
@@ -255,13 +262,14 @@
           "zip": "98135"
         },
         "description": "Experience urban sophistication at Downtown Oasis, situated in the heart of the city. These 1-bedroom apartments offer 1.5 baths and 1000 sq ft of stylish, downtown living.",
-        "beds": 1,
+        "beds": 6,
         "baths": 1.5,
         "sqft": 1000,
         "image": "/img/Cedar.jpeg",
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
-        "rent": 2000,
+        "rent": 8000,
+        "availabilityDate": "19/08/2025",
         "mapsLink": "https://maps.app.goo.gl/uvw234xyz567",
         "reviews": [
             {
@@ -297,6 +305,7 @@
         "amenities": "Fully Furnished, Wood Style Flooring, Full-Size Beds",
         "tel": "(206 729-7737)",
         "rent": 2000,
+        "availabilityDate": "19/03/2029",
         "mapsLink": "https://maps.app.goo.gl/xyz567abc890",
         "reviews": [
             {

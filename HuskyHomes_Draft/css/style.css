@@ -1,17 +1,17 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1.apartment {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .heading {
-    text-align: left;
+  text-align: left;
 }
 
 .button-section {
@@ -20,136 +20,134 @@ h1 {
   border: 2px solid #000000;
   padding: 20px;
   padding-bottom: 55px;
-  margin-top: 40px; 
-  margin-left: 20px; 
-  left: -40px; 
+  margin-top: 40px;
+  margin-left: 20px;
+  left: -40px;
 }
 button {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 .button-section a {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 .move-right {
   text-align: left;
   padding-left: 140px;
-  }
-  
-  .icons i {
-      color: rgb(226, 208, 110);
-      display: inline-block;
-  }
-  
-  .fa-heart {
-      margin-left: 80px;
-  }
-  
-  
-  
-  .cent-img {
-    float: left;
-    width: 500px;
-    max-width: 100%;
-    height: auto;
-  }
+}
 
-  #indexhtml{
-    height: 100%;
-  }
-#indexmain{
-    flex: 1;
-    height: 100%;
-  }
-  p{
-    padding: 0.5rem 1rem;
-  }
-  
-  #indexbody {
-    display: flex;
-    flex-direction: column;
-    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
-    margin: 0;
-    height: inherit;
-  }
-  .indexcontainer{ 
-    display: flex;
-    padding: 1em;
-    height: 100%;
-  }
-  .sect2{
-    flex-basis: 240px;
-    padding: 1em;
-    flex: 1;
-  }
-  .sect3{
-    flex-basis: 240px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding: 1em;
-    background-color: aliceblue;
-    position: relative;
-  }
+.icons i {
+  color: rgb(226, 208, 110);
+  display: inline-block;
+}
 
-  .filter-item {
-    margin-bottom: 20px;
-  }
+.fa-heart {
+  margin-left: 80px;
+}
 
-  .index-button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #0078d4;
-    color: white;
-    cursor: pointer;
-  } 
+.cent-img {
+  float: left;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
 
-  button:hover {
-    background-color: #106ebc;
-  }
+.indexhtml {
+  height: 100%;
+}
+.indexmain {
+  flex: 1;
+  height: 100%;
+}
+p {
+  padding: 0.5rem 1rem;
+}
 
-  .container2{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    background-color: #eee;
-  }
-  .card-item{
-    flex: 0 0 250px;
-    background-color: white;
-    margin: 0.5rem;
-    box-shadow: 01px 3px rgba(0,0,0,0.16) ,01px 3px rgba(0,0,0,0.23);
-    border-radius: 2px;
-  }
-  .card-item img{
-    max-width: 250px;
-  }
-  .mapsLink p{
-    text-align: center;
-    width: 100%;
-  }
-  .mapsLink a{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 2px;
-  }
-  
-  .card-item p{
-    margin:0;
-    text-align: center;
-  }
-  h2,h3{
-    text-align: center;
-  }
+.indexbody {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  margin: 0;
+  height: inherit;
+}
+.indexcontainer {
+  display: flex;
+  padding: 1em;
+  height: 100%;
+}
+.sect2 {
+  flex-basis: 240px;
+  padding: 1em;
+  flex: 1;
+}
+.sect3 {
+  flex-basis: 240px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 1em;
+  background-color: aliceblue;
+  position: relative;
+}
 
-  
- .login-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} 
+.filter-item {
+  margin-bottom: 20px;
+}
+
+.index-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0078d4;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #106ebc;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eee;
+}
+.card-item {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: 0.5rem;
+  box-shadow: 01px 3px rgba(0, 0, 0, 0.16), 01px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+}
+.card-item img {
+  max-width: 250px;
+}
+.mapsLink p {
+  text-align: center;
+  width: 100%;
+}
+.mapsLink a {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2px;
+}
+
+.card-item p {
+  margin: 0;
+  text-align: center;
+}
+h2,
+h3 {
+  text-align: center;
+}
+
+.login-body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 .login-container {
   background-color: #fff;
@@ -191,52 +189,48 @@ button {
   background-color: #005a9e;
 }
 
-
 .regrister-link {
   color: #0078d4;
   text-decoration: none;
 }
 
-  @media screen and (max-width: 767px) {
-    Your CSS styles for small screens go here
-    .button-section {
-        padding: 20px;
-        display: none;
-    }
-    .small-screen {
-        padding-left: 10px;
-    }
+@media screen and (max-width: 767px) {
+  Your CSS styles for small screens go here .button-section {
+    padding: 20px;
+    display: none;
+  }
+  .small-screen {
+    padding-left: 10px;
+  }
 
-    h1 {
-        text-align: center;
-    }
-    
+  h1 {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
-  .sect3{
+  .sect3 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 
-    body {
-        font-size: 18px;
-    }
-
-  .flex-container { 
+  .flex-container {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
     padding: 0.5rem;
-}
+  }
 
-.flex-item {
- padding: 20px;
-}
+  .flex-item {
+    padding: 20px;
+  }
 
-ul#flex {
+  ul#flex {
     display: flex;
     flex-wrap: wrap;
-}
+  }
 }

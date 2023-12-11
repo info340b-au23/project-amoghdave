@@ -1,8 +1,23 @@
 // Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
-const Header = () => {
+const Header = ({filterWithName}) => {
+  const history = useHistory();
+  const [searchTerm, setSearchTerm] = useState([]);
+
+  const logOut = (e) => {
+    e.preventDefault();
+    sessionStorage.removeItem('user');
+    window.location.replace('/login');
+  }
+
+  const performSearch = (e) => {
+    e.preventDefault();
+    filterWithName(searchTerm);
+  }
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,25 +25,27 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
+                <Link className="nav-link active" to="/home">
                   Husky Homes
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/ApartmentReviews">
+                <Link className="nav-link" to="/home">
                   Apartments
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/login">
-                  Log In
+                <Link className="nav-link" onClick={(e) => logOut(e)} to="/">
+                  Log Out
                 </Link>
               </li>
             </ul>
-            <form className="d-flex" role="search">
+            <form className="d-flex" onSubmit={performSearch}>
               <input
                 className="form-control me-2"
-                type="search"
+                type="text"
+                value={searchTerm} 
+                onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search"
                 aria-label="Search"
               />

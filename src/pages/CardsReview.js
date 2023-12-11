@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardReview = (props) => {
-  const { name, beds, baths, sqft, rent, amenities, reviews } = props.apartment;
+  const { beds, baths, sqft, rent, reviews } = props.apartment;
 
   return (
     <div className="container ex-pad">

@@ -29,9 +29,6 @@ const PostReview = ({ addReview }) => {
       return;
     }
 
-    // Use formData for submission or further processing
-    console.log(formData);
-
     // Call the addReview function with the new review
     addReview({
       title: formData.title,

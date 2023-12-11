@@ -1,5 +1,6 @@
 // Login.js
 import React, { useState } from 'react';
+import { getDatabase, ref, child, get  } from "firebase/database";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -15,8 +16,24 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your login logic here using Firebase or any other authentication method
-    console.log('Login form submitted:', { email, password });
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, `users/${email.split("@")[0]}`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        if (snapshot.val().password === password) {
+          sessionStorage.setItem('user', JSON.stringify({
+            email,
+            password
+          }))
+          window.location.replace("/home");
+        } else {
+          alert('Login data is incorrect.')
+        }
+      } else {
+        alert('Login data is incorrect.')
+      }
+    }).catch((error) => {
+      alert('Login data is incorrect.')
+    });
   };
 
   return (
@@ -52,7 +69,7 @@ const Login = () => {
         </button>
       </form>
       <p>
-        Don't have an account? <a className="register-link" href="#">
+        Don't have an account? <a className="register-link" href="/signup">
           Register
         </a>
       </p>
