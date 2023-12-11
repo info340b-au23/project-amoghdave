@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,12 +38,15 @@ h1 {
   margin-left: 20px;
   left: -40px;
 }
+
 button {
   margin-bottom: 20px;
 }
+
 .button-section a {
   margin-top: 10px;
 }
+
 .move-right {
   text-align: left;
   padding-left: 140px;
@@ -54,10 +71,12 @@ button {
 .indexhtml {
   height: 100%;
 }
+
 .indexmain {
   flex: 1;
   height: 100%;
 }
+
 p {
   padding: 0.5rem 1rem;
 }
@@ -69,16 +88,19 @@ p {
   margin: 0;
   height: inherit;
 }
+
 .indexcontainer {
   display: flex;
   padding: 1em;
   height: 100%;
 }
+
 .apartments {
   flex-basis: 240px;
   padding: 1em;
   flex: 1;
 }
+
 .filters {
   flex-basis: 240px;
   flex-grow: 0;
@@ -102,10 +124,12 @@ p {
 
 button:hover {
   background-color: #106ebc;
+  color: #5904a8;
 }
 
-.link-container {
-  width: min-content;
+.button-hovered {
+  background-color: #ffc107;
+  color: #000000;
 }
 
 .container2 {
@@ -114,6 +138,7 @@ button:hover {
   justify-content: center;
   background-color: #eee;
 }
+
 .card-item {
   flex: 0 0 250px;
   background-color: white;
@@ -121,13 +146,16 @@ button:hover {
   box-shadow: 01px 3px rgba(0, 0, 0, 0.16), 01px 3px rgba(0, 0, 0, 0.23);
   border-radius: 2px;
 }
+
 .card-item img {
   max-width: 250px;
 }
+
 .mapsLink p {
   text-align: center;
   width: 100%;
 }
+
 .mapsLink a {
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +167,7 @@ button:hover {
   margin: 0;
   text-align: center;
 }
+
 h2,
 h3 {
   text-align: center;
@@ -198,21 +227,67 @@ h3 {
   text-decoration: none;
 }
 
+p.address {
+  text-align: left;
+}
+
 @media screen and (max-width: 767px) {
+  .button-section {
+    padding: 20px;
+  display: none;
   Your CSS styles for small screens go here .button-section {
     padding: 20px;
-    display: none;
-  }
-  .small-screen {
-    padding-left: 10px;
-  }
+}
 
-  h1 {
-    text-align: center;
-  }
+.small-screen {
+  padding-left: 10px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+  .filters {
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.flex-item {
+  padding: 20px;
+}
+
+ul#flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-container {
+  width: min-content;
+}
+
 }
 @media screen and (max-width: 767px) {
   .filters {
     display: none;
-  }
+}
+
 }

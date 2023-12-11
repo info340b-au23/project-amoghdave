@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './style.css';
-import Login from './pages/login';
-import Signup from './pages/signup';
-import ApartmentReview from './pages/ApartmentReviews';
-import PropertyList from './pages/propertylist';
-import Header from './pages/Header';
+import Login from './components/login';
+import Signup from './components/signup';
+import ApartmentReview from './components/ApartmentReviews';
+import PropertyList from './components/propertylist';
+import Header from './components/Header';
 import { Redirect } from "react-router-dom";
 
 import './firebase'

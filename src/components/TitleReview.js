@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../review.css';
+import '../style.css';
 
 const TitleReview = ({ apartment }) => {
   // State to track hover status of buttons
