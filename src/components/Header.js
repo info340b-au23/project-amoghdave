@@ -16,6 +16,11 @@ const Header = ({filterWithName}) => {
   const performSearch = (e) => {
     e.preventDefault();
     filterWithName(searchTerm);
+    if (typeof e === 'string') {
+      var lowerKey = e.toLowerCase();
+    } else {
+      console.error('Key is not a string.');
+    }
   }
 
   return (
