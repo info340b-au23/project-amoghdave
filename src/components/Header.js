@@ -1,9 +1,8 @@
-// Header.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
-const Header = ({filterWithName}) => {
+const Header = ({ filterWithName }) => {
   const history = useHistory();
   const [searchTerm, setSearchTerm] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -16,25 +15,24 @@ const Header = ({filterWithName}) => {
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
-};
+  };
 
   const performSearch = (e) => {
     e.preventDefault();
+
     if (!searchTerm.trim()) {
-        // If searchTerm is empty or contains only whitespace, do nothing
-        setErrorMessage('');
-        return;
+      setErrorMessage('');
+      return;
     }
 
-    // Rest of your search logic
-    var lowerKey = searchTerm.toLowerCase();
+    const lowerKey = searchTerm.toLowerCase();
     const searchResults = filterWithName(lowerKey);
 
-    if (searchResults && searchTerm.length === 0) {
-      // Handle the case when no matching results are found
+    if (!searchResults.length) {
       setErrorMessage('Apartment name not found');
     } else {
       setErrorMessage('');
+      setSearchTerm(''); // Clear search term on success
     }
   };
 
@@ -45,12 +43,12 @@ const Header = ({filterWithName}) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" to="/home">
+                <Link className="nav-link active" to="/home" onClick={() => window.location.reload()}>
                   Husky Homes
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/home">
+                <Link className="nav-link" to="/home" onClick={() => window.location.reload()}>
                   Apartments
                 </Link>
               </li>
@@ -64,8 +62,8 @@ const Header = ({filterWithName}) => {
               <input
                 className="form-control me-2"
                 type="text"
-                value={searchTerm} 
-                onChange={(e) => setSearchTerm(e.target.value)}
+                value={searchTerm}
+                onChange={handleInputChange}
                 placeholder="Search"
                 aria-label="Search"
               />

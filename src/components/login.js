@@ -15,7 +15,7 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const auth = getAuth(firebaseApp);
+  // const auth = getAuth(firebaseApp);
 
   const handleSubmit = (e) => {
     e.preventDefault();

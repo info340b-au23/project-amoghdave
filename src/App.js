@@ -6,15 +6,15 @@ import Signup from './components/signup';
 import ApartmentReview from './components/ApartmentReviews';
 import PropertyList from './components/propertylist';
 import Header from './components/Header';
-import { Redirect } from "react-router-dom";
-
-import './firebase'
-import { getDatabase, ref, child, get } from "firebase/database";
+import { Redirect } from 'react-router-dom';
+import './firebase';
+import { getDatabase, ref, child, get } from 'firebase/database';
 
 function App() {
   const [tempApartments, setTempApartments] = useState([]);
   const [apartments, setApartments] = useState([]);
- 
+  const [filteredApartments, setFilteredApartments] = useState([]); // New state for filtered apartments
+
   const [filters, setFilters] = useState({
     priceRange: 10000,
     numBedrooms: '1',
@@ -42,41 +42,44 @@ function App() {
     });
   }
 
-  function applyFilters() {
-    let newApartments = tempApartments;
-    console.log(filters.availabilityDate);
-    newApartments = newApartments.filter(
-      (newApartment) => newApartment.rent <= filters.priceRange && newApartment.beds >= filters.numBedrooms && (filters.availabilityDate ? new Date(newApartment.availabilityDate) >= new Date(filters.availabilityDate) : true)
+  const applyFilters = () => {
+    let newFilteredApartments = tempApartments || [];
+    newFilteredApartments = newFilteredApartments.filter(
+      (newApartment) =>
+        newApartment.rent <= filters.priceRange &&
+        newApartment.beds >= filters.numBedrooms &&
+        (filters.availabilityDate
+          ? new Date(newApartment.availabilityDate) >= new Date(filters.availabilityDate)
+          : true)
     );
-    setApartments(newApartments);
-  }
+    setFilteredApartments(newFilteredApartments); // Set filtered apartments separately
+  };
 
   useEffect(() => {
     const dbRef = ref(getDatabase());
-    get(child(dbRef, 'apartments')).then((snapshot) => {
-      if (snapshot.exists()) {
-        setApartments(snapshot.val());
-        setTempApartments(snapshot.val());
-      } else {
-        console.log('Data is corrupt.')
-      }
-    }).catch((error) => {
-      console.log('Data is corrupt.')
-    });
+    get(child(dbRef, 'apartments'))
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          setApartments(snapshot.val());
+          setTempApartments(snapshot.val());
+          setFilteredApartments(snapshot.val()); // Set filtered apartments initially
+        } else {
+          console.log('Data is corrupt.');
+        }
+      })
+      .catch((error) => {
+        console.log('Data is corrupt.');
+      });
   }, []);
 
   const filterWithName = (key) => {
-    let newApartments = tempApartments;
-    newApartments = newApartments.filter(
-      (newApartment) => newApartment.name.toLowerCase().includes(key.toLowerCase())
+    let newFilteredApartments = tempApartments || [];
+    newFilteredApartments = newFilteredApartments.filter((newApartment) =>
+      newApartment.name.toLowerCase().includes(key.toLowerCase())
     );
-    setApartments(newApartments);
-    setFilters({
-      priceRange: 10000,
-      numBedrooms: '1',
-      availabilityDate: '',
-    });
-  }
+    setFilteredApartments(newFilteredApartments); // Set filtered apartments separately
+    return newFilteredApartments;
+  };
 
   return (
     <div className="App">
@@ -88,25 +91,25 @@ function App() {
             <Route path="/signup" component={Signup} />
             {sessionStorage.getItem('user') !== null ? (
               <>
-                  <Route path="/ApartmentReviews/:id" component={ApartmentReview} />
-                  <Route path="/property-list" component={PropertyList} />
-                  <Route path="/home">
+                <Route path="/ApartmentReviews/:id" component={ApartmentReview} />
+                <Route path="/property-list" component={PropertyList} />
+                <Route path="/home">
                   <>
                     <main className="indexmain">
                       <div className="indexcontainer">
                         <section className="apartments">
                           <div className="AptCardContainer">
-                            {apartments.map((apartment, index) => (
+                            {filteredApartments.map((apartment, index) => (
                               // Wrap each card with a Link to the ApartmentReview page
                               <div key={index} className="card-item AptCardContainer">
                                 <div className="card-item">
                                   <img src={apartment.image} alt={`apartmentImage${index + 1}`} />
-                                  <Link to={`/ApartmentReviews/${index}`}>
+                                  <Link to={`/ApartmentReviews/${filteredApartments.indexOf(apartment)}`} onClick={() => window.location.reload()}>
                                     <h2>{apartment.name}</h2>
                                   </Link>
                                   <h3>{apartment.address.city}</h3>
                                   <h3>Rent: {apartment.rent}</h3>
-                                  <h3>Availablity Date: {apartment.availablityDate}</h3>
+                                  <h3>Availability Date: {apartment.availabilityDate}</h3>
                                   <div className="mapsLink">
                                     <a href={apartment.mapsLink}>
                                       <p>
@@ -126,13 +129,13 @@ function App() {
                           {/* Price Range Filter */}
                           <div>
                             <label htmlFor="priceRange">Price Range: </label>
-                            <input 
-                              type="range" 
+                            <input
+                              type="range"
                               id="priceRange"
                               min="1"
                               max="10000"
-                              value={filters.priceRange} 
-                              onChange={handlePriceRangeChange} 
+                              value={filters.priceRange}
+                              onChange={handlePriceRangeChange}
                             />
                             <span>{filters.priceRange}</span>
                           </div>
@@ -140,9 +143,9 @@ function App() {
                           {/* Number of Bedrooms Filter */}
                           <div>
                             <label htmlFor="numBedrooms">Number of Bedrooms: </label>
-                            <select 
-                              id="numBedrooms" 
-                              value={filters.numBedrooms} 
+                            <select
+                              id="numBedrooms"
+                              value={filters.numBedrooms}
                               onChange={handleNumBedroomsChange}
                             >
                               <option value="1">1</option>
@@ -155,11 +158,11 @@ function App() {
                           {/* Availability Date Filter */}
                           <div>
                             <label htmlFor="availabilityDate">Availability Date: </label>
-                            <input 
-                              type="date" 
-                              id="availabilityDate" 
-                              value={filters.availabilityDate} 
-                              onChange={handleAvailabilityDateChange} 
+                            <input
+                              type="date"
+                              id="availabilityDate"
+                              value={filters.availabilityDate}
+                              onChange={handleAvailabilityDateChange}
                             />
                           </div>
 
@@ -168,8 +171,8 @@ function App() {
                         </section>
                       </div>
                     </main>
-                    </>
-                  </Route>
+                  </>
+                </Route>
               </>
             ) : (
               <Redirect to="/login" />
