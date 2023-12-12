@@ -45,7 +45,6 @@ function App() {
   function applyFilters() {
     let newApartments = tempApartments;
     console.log(filters.availabilityDate);
-    // && new Date(newApartment.availabilityDate) >= new Date(filters.availabilityDate)
     newApartments = newApartments.filter(
       (newApartment) => newApartment.rent <= filters.priceRange && newApartment.beds >= filters.numBedrooms && (filters.availabilityDate ? new Date(newApartment.availabilityDate) >= new Date(filters.availabilityDate) : true)
     );
@@ -99,7 +98,7 @@ function App() {
                           <div className="AptCardContainer">
                             {apartments.map((apartment, index) => (
                               // Wrap each card with a Link to the ApartmentReview page
-                              <div key={index} className="d-flex justify-content-center link-container">
+                              <div key={index} className="card-item AptCardContainer">
                                 <div className="card-item">
                                   <img src={apartment.image} alt={`apartmentImage${index + 1}`} />
                                   <Link to={`/ApartmentReviews/${index}`}>
