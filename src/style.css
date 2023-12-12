@@ -132,11 +132,11 @@ button:hover {
   color: #000000;
 }
 
-.container2 {
+.AptCardContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: #eee;
+  justify-content: center;
 }
 
 .card-item {
@@ -150,6 +150,22 @@ button:hover {
 .card-item img {
   max-width: 250px;
 }
+
+/* 
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 30%; 
+    margin: 10px; 
+}
+
+
+*/
+
 
 .mapsLink p {
   text-align: center;

@@ -96,7 +96,7 @@ function App() {
                     <main className="indexmain">
                       <div className="indexcontainer">
                         <section className="apartments">
-                          <div className="container2">
+                          <div className="AptCardContainer">
                             {apartments.map((apartment, index) => (
                               // Wrap each card with a Link to the ApartmentReview page
                               <div key={index} className="d-flex justify-content-center link-container">
