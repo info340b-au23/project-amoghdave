@@ -1,7 +1,7 @@
 // Login.js
 import React, { useState } from 'react';
 import { getDatabase, ref, child, get  } from "firebase/database";
-import firebaseApp from 'src/firebase.js';
+// import firebaseApp from 'src/firebase.js';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -14,6 +14,8 @@ const Login = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
+
+  const auth = getAuth(firebaseApp);
 
   const handleSubmit = (e) => {
     e.preventDefault();
