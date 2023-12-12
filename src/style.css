@@ -291,6 +291,10 @@ ul#flex {
 
 }
 
+.errorMessage {
+  color: red;
+  margin-top: 5px;
+}
 
 html {
   font-family: Arial, Helvetica, sans-serif;

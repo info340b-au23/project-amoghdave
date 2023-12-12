@@ -6,12 +6,13 @@ import { useHistory } from "react-router-dom";
 const Header = ({filterWithName}) => {
   const history = useHistory();
   const [searchTerm, setSearchTerm] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const logOut = (e) => {
     e.preventDefault();
     sessionStorage.removeItem('user');
     window.location.replace('/login');
-  }
+  };
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
@@ -21,14 +22,21 @@ const Header = ({filterWithName}) => {
     e.preventDefault();
     if (!searchTerm.trim()) {
         // If searchTerm is empty or contains only whitespace, do nothing
+        setErrorMessage('');
         return;
     }
 
     // Rest of your search logic
     var lowerKey = searchTerm.toLowerCase();
-    filterWithName(lowerKey);
+    const searchResults = filterWithName(lowerKey);
 
-  }
+    if (searchResults && searchTerm.length === 0) {
+      // Handle the case when no matching results are found
+      setErrorMessage('Apartment name not found');
+    } else {
+      setErrorMessage('');
+    }
+  };
 
   return (
     <header>
@@ -65,6 +73,7 @@ const Header = ({filterWithName}) => {
                 Search
               </button>
             </form>
+            {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
           </div>
         </div>
       </nav>
