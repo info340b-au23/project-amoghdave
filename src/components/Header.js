@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 const Header = ({filterWithName}) => {
   const history = useHistory();
-  const [searchTerm, setSearchTerm] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const logOut = (e) => {
     e.preventDefault();
@@ -13,14 +13,21 @@ const Header = ({filterWithName}) => {
     window.location.replace('/login');
   }
 
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+};
+
   const performSearch = (e) => {
     e.preventDefault();
-    filterWithName(searchTerm);
-    if (typeof e === 'string') {
-      var lowerKey = e.toLowerCase();
-    } else {
-      console.error('Key is not a string.');
+    if (!searchTerm.trim()) {
+        // If searchTerm is empty or contains only whitespace, do nothing
+        return;
     }
+
+    // Rest of your search logic
+    var lowerKey = searchTerm.toLowerCase();
+    filterWithName(lowerKey);
+
   }
 
   return (
