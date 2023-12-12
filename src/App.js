@@ -104,7 +104,7 @@ function App() {
                               <div key={index} className="card-item AptCardContainer">
                                 <div className="card-item">
                                   <img src={apartment.image} alt={`apartmentImage${index + 1}`} />
-                                  <Link to={`/ApartmentReviews/${filteredApartments.indexOf(apartment)}`} onClick={() => window.location.reload()}>
+                                  <Link to={`/ApartmentReviews/${index}`}>
                                     <h2>{apartment.name}</h2>
                                   </Link>
                                   <h3>{apartment.address.city}</h3>
